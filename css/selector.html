@@ -5,17 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>selectors</title>
+
+  <style>
+
+  /*div{border:1px #F00 solid;}*/
+  /*div,ul,li{border:1px #F00 solid;}*/
+  /*.menu {border:1px #F00 solid}*/
+  /*#unit1{border:1px #F00 solid}*/
+  /*.menu li {border:1px #F00 solid;}*/
+  /*.menu>ul>li{border:1px #F00 solid;}*/
+  /*.menu .testul>li{border:1px #F00 solid;}*/
+  /*.menu ul.subul {border:1px #F00 solid;}*/
+  /*ul.subul.list-item{border:1px #F00 solid;}*/
+  /*.menu li li:first-child{border:1px #F00 solid}*/
+  /*.menu li li:last-child{border:1px #F00 solid}*/
+  /*li input[type="button"]{border:1px #F00 solid}*/
+  /*a[href="라이코스"]{border:1px #F00 solid}*/
+
+    /*
+
+    ^ = 시작하면
+    * = 포함되어있으면
+    $ = 끝나면
+
+     */
+  /*
+  a[href*="이코"]{border:1px #F00 solid}
+  a[href^="라이"]{border:1px #F00 solid}
+  a[href$="코스"]{border:1px #F00 solid}
+  */
+
+  /*.unit+li+li{border:1px #F00 solid}*/
+  /*.unit~p{border:1px #F00 solid}*/
+
+
+
+
+  </style>
+
+
+
+
 </head>
 <body>
 
 
-<div>
+
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p class="unit"></p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <div>text</div>
+  <p>text</p>
+  <p>text</p>
+
+
+
+<div class="menu">
   <ul class="first-ul">
     <li>text1
       <ul class="subul">
         <li>text1-1</li>
         <li>text2-2</li>
-        <li class="unit">text3-3</li>
+        <li class="unit">unit</li>
         <li>text1-1</li>
         <li>text2-2</li>
         <li>text3-3</li>
@@ -25,10 +80,10 @@
       <ul class="subul list-item">
         <li><input type="text"></li>
         <li><input type="button"></li>
-        <li>text3-3</li>
+        <li><a href="네이버">text3-3</a></li>
       </ul>
     </li>
-    <li>text3
+    <li><a href="라이코스">text3</a>
       <ul class="testul">
         <li><input type="text"></li>
         <li id="unit">text2-2</li>
@@ -38,7 +93,7 @@
             <li id="unit1">text2-2</li>
             <li>text3-3</li>
             <li><input type="text1"></li>
-            <li id="unit1">text2-2</li>
+            <li id="unit2">text2-2</li>
             <li>text3-3</li>
           </ul>
         </li>
