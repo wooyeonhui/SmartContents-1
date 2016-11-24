@@ -1,0 +1,11 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-image: url("http://wondergirls.jype.com/images/bg-pc.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
